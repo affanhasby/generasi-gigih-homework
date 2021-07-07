@@ -1,0 +1,3 @@
+alertFunction = () =>{
+  alert("Good!");
+}
