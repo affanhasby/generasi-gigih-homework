@@ -1,0 +1,10 @@
+#playlist {
+    border: solid 1px black;
+    margin: 20px;
+    padding: 20px;
+    background-color: antiquewhite;
+}
+
+#playlist img {
+    width: 30%;
+}
