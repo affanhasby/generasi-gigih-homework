@@ -1,6 +1,11 @@
 import './App.css';
 import './data';
 import data from './data';
+import Image from './component/Image.js';
+import Album from './component/Album.js';
+import Artis from './component/Artis.js';
+import Judul from './component/Judul.js';
+import Button from './component/Button.js';
 
 function App() {
   console.log(data)
@@ -17,11 +22,11 @@ function App() {
         </form>
       </div>
       <div id="playlist">
-        <img id="track-img" src={data.album.images[0].url} alt="Album" width=""/>
-        <p id="judul">{data.name}</p>
-        <p id="artis">{data.artists[0].name}</p>
-        <p id="album">{data.album.name}</p>
-        <button>Select</button>
+        <Image src={data.album.images[0].url}/>
+        <Judul judul={data.name}/>
+        <Artis artis={data.album.name}/>
+        <Album album={data.album.name}/>
+        <Button/>
       </div>
     </div>
   );
